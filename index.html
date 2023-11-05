@@ -11,6 +11,12 @@
     rel="stylesheet"
   />
   <style>
+    #page-allignment {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
     html {
       -webkit-tap-highlight-color: transparent;
     }
@@ -72,7 +78,7 @@
       color: #efe4e4;
       font-family: "Playpen Sans", cursive;
       font-size: 0.8rem;
-     height: 40vh;
+      text-align: center;
       display: flex;
       flex-direction: column-reverse;
     }
@@ -109,7 +115,7 @@
         color: #efe4e4;
         font-family: "Playpen Sans", cursive;
         font-size: 1rem;
-        height: 100vh;
+
         display: flex;
         flex-direction: column-reverse;
       }
@@ -126,18 +132,19 @@
       }
     }
   </style>
-  <body>
-    <br />
-    <img src="./assets/title.jpg" />
-
-    <div id="links">
-      <a href="./chapters/chp1.html"><button>chapter 1</button></a><br />
-
-      <br />
+  <div id="page-allignment">
+    <div>
+      <body>
+        <img src="./assets/title.jpg" />
+        <br />
+        <br />
+        <div id="links">
+          <a href="./chapters/chp1.html"><button>chapter 1</button></a><br />
+        </div>
+      </body>
     </div>
-  </body>
-
-  <footer>
-    <h2>Updates every sunday</h2>
-  </footer>
+    <footer>
+      <h2>Updates every sunday</h2>
+    </footer>
+  </div>
 </html>
