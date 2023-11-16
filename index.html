@@ -11,11 +11,9 @@
     rel="stylesheet"
   />
   <style>
-    #page-allignment {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 94vh;
+
+    body{
+      justify-content: center;
     }
     html {
       -webkit-tap-highlight-color: transparent;
@@ -29,12 +27,37 @@
       -ms-user-select: none;
       user-select: none;
     }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 241, 145, 0.882); 
+  border-radius: 23px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
     #links {
       text-align: center;
       margin-top: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: auto;
+      
+      max-height: 400px;
+     
     }
 
     #links button {
@@ -45,6 +68,7 @@
       cursor: pointer;
       transition: background-color 0.3s;
       margin: 10px 0;
+      margin-right: 10px;
     }
 
     #links button a {
@@ -62,22 +86,24 @@
       #links {
         display: grid;
       }
+      
     }
 
     body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 97xvh;
+      
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #0d0d0dfa;
+      
     }
 
     footer {
       color: #efe4e4;
       font-family: "Playpen Sans", cursive;
-      font-size: 0.8rem;
+      font-size: 0.5rem;
       text-align: center;
       display: flex;
       flex-direction: column-reverse;
@@ -85,12 +111,12 @@
     h2 {
       font-family: "Playpen Sans", cursive;
 
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: #efe4e4;
       margin-bottom: 20px;
     }
     img {
-      max-width: 40rem;
+      max-width: 30rem;
       width: 100%;
       min-width: 30rem;
       border-radius: 40px;
@@ -100,9 +126,19 @@
       width: 20rem;
       font-weight: 900;
       color: rgb(70, 70, 70);
-      font-size: 3vh;
+      
     }
-    @media only screen and (min-width: 900px) {
+  .page{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    flex-direction: row;
+    gap: 50px;
+  }
+    @media only screen and (max-width: 900px) {
+      .page{
+        flex-direction: column;
+      }
       h2 {
         font-family: "Playpen Sans", cursive;
 
@@ -121,7 +157,7 @@
       }
       button {
         font-family: "Playpen Sans", cursive;
-        width: 30rem;
+        width: 20rem;
         font-weight: 900;
         color: rgb(70, 70, 70);
         font-size: 3vh;
@@ -130,18 +166,30 @@
         height: 200px;
         width: 200px;
       }
+
     }
   </style>
   <div id="page-allignment">
     <div>
       <body>
+        <div class="page">
         <img src="./assets/title.jpg" />
-        <br />
-        <br />
+
         <div id="links">
           <a href="./chapters/chp1.html"><button>chapter 1</button></a><br />
           <a href="./chapters/chp2.html"><button>chapter 2</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+          <a><button>Coming soon</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+          <a ><button>Coming soon</button></a><br />
+
+
         </div>
+      </div>
       </body>
     </div>
     <footer>
