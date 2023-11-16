@@ -56,8 +56,13 @@
       align-items: center;
       overflow: auto;
       
-      max-height: 400px;
+      
      
+    }
+    @media only screen and (min-width: 900px) {
+      #links{
+        max-height: 400px;
+      }
     }
 
     #links button {
@@ -82,12 +87,6 @@
       background-color: #80f184;
     }
 
-    @media screen and (max-width: 768px) {
-      #links {
-        display: grid;
-      }
-      
-    }
 
     body {
       display: flex;
