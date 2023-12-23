@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter-6</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+   -webkit-tap-highlight-color: transparent;
+}
+      .chpview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-image: url("../assets/pattern_japanese-pattern-3_1_2_0-0_0_1__00000069_4cae4f40.png");
+        justify-content: start;
+        gap: 0px;
+      }
+      body {
+        height: 100vh;
+        background-color: #0f0f0f;
+        
+      }
+
+      button{
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 241, 145, 0.882); 
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+      .chpview > img {
+        width: 50em;
+      }
+      .fix-header{
+        width: 60%
+      }
+      @media only screen and (max-width: 900px) {
+        .chpview > img {
+          width: 100%;
+        }
+      }
+      h1 {
+        font-family: "Playpen Sans", cursive;
+
+        font-size: 20px;
+        color: #efe4e4;
+        margin-bottom: 20px;
+      }
+      button {
+        
+        padding: 5px 20px;
+        background-color: rgba(128, 241, 145, 0.882);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 10px 0;
+        font-family: "Playpen Sans", cursive;
+        
+        font-size: 20px;
+        color: #515151;
+        margin-bottom: 20px;
+      }
+      button:hover {
+      background-color: #80f184;
+    }
+      .afix{
+        width: 100%;
+        ;
+      }
+      .endbutton{
+        width: 100%;
+        font-weight: 900;
+        color: #515151;
+      }
+      .fix-footer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <h1>Chapter 6</h1>
+      <a  href="../index.html"><button >Home</button></a>
+    </div>
+    <div class="chpview">
+      
+      </div>
+      <div class="fix-footer"
+      style="display: flex; flex-direction: row; justify-content: center;gap: 10px;">
+    <a class="afix"  href="./chp5.html"><button class="endbutton"><</button></a>
+      <a class="afix" href="./chp7.html"><button class="endbutton">></button></a>
+    </div>
+  </body>
+  <script src="../jquery.js" ></script>
+  <script>
+    for (i=0;i<64;i++){
+      $(".chpview").append(`<img draggable="false" src="./chapterAssets/chapter-6/${i}.jpg" />`)
+    }
+  </script>
+</html>
